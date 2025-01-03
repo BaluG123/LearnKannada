@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "400445123620",
+    "project_id": "learn-kannada-57de1",
+    "storage_bucket": "learn-kannada-57de1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400445123620:android:646001b1b2dfa92361fcb1",
+        "android_client_info": {
+          "package_name": "com.learnkannada"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9aPYqe1rgCicWGt2Yea3YZfsrzOjwRs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
