@@ -100,3 +100,51 @@ export const updateLanguageProgress = async (level, score) => {
     throw error;
   }
 };
+
+export const updateUserXP = async xpEarned => {
+  try {
+    const userId = auth().currentUser?.uid;
+    if (!userId) throw new Error('No authenticated user found');
+
+    const userRef = firestore().collection(USERS_COLLECTION).doc(userId);
+
+    await firestore().runTransaction(async transaction => {
+      const userDoc = await transaction.get(userRef);
+      const currentXP = userDoc.data()?.totalXP || 0;
+      const dailyXP = userDoc.data()?.dailyXP || 0;
+
+      transaction.update(userRef, {
+        totalXP: currentXP + xpEarned,
+        dailyXP: dailyXP + xpEarned,
+        lastXPUpdate: firestore.FieldValue.serverTimestamp(),
+      });
+    });
+  } catch (error) {
+    console.error('Firestore Error:', error);
+    throw error;
+  }
+};
+
+export const updateLessonProgress = async (lessonId, progressData) => {
+  try {
+    const userId = auth().currentUser?.uid;
+    if (!userId) throw new Error('No authenticated user found');
+
+    const progressRef = firestore()
+      .collection(USERS_COLLECTION)
+      .doc(userId)
+      .collection('lessonProgress')
+      .doc(lessonId);
+
+    await progressRef.set(
+      {
+        ...progressData,
+        updatedAt: firestore.FieldValue.serverTimestamp(),
+      },
+      {merge: true},
+    );
+  } catch (error) {
+    console.error('Firestore Error:', error);
+    throw error;
+  }
+};

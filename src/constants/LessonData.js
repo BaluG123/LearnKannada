@@ -1,0 +1,200 @@
+// export const LESSONS = [
+//   {
+//     id: '1',
+//     title: 'Basic Greetings',
+//     level: 'Beginner',
+//     description: 'Learn essential Kannada greetings',
+//     duration: '10 min',
+//     topics: [
+//       'ನಮಸ್ಕಾರ (Namaskara)',
+//       'ಹೇಗಿದ್ದೀರಿ? (Hegiddiri?)',
+//       'ಶುಭ ದಿನ (Shubha Dina)',
+//     ],
+//     content: [
+//       {
+//         type: 'greeting',
+//         kannada: 'ನಮಸ್ಕಾರ',
+//         pronunciation: 'Namaskara',
+//         english: 'Hello/Greetings',
+//         audioUrl: 'namaskara.mp3',
+//       },
+//       {
+//         type: 'greeting',
+//         kannada: 'ಹೇಗಿದ್ದೀರಿ?',
+//         pronunciation: 'Hegiddiri?',
+//         english: 'How are you?',
+//         audioUrl: 'hegiddiri.mp3',
+//       },
+//     ],
+//   },
+//   {
+//     id: '2',
+//     title: 'Numbers 1-10',
+//     level: 'Beginner',
+//     description: 'Learn to count in Kannada',
+//     duration: '15 min',
+//     topics: ['ಒಂದು (Ondu)', 'ಎರಡು (Eradu)', 'ಮೂರು (Mooru)'],
+//     content: [
+//       {
+//         type: 'number',
+//         kannada: 'ಒಂದು',
+//         pronunciation: 'Ondu',
+//         english: 'One',
+//         audioUrl: 'ondu.mp3',
+//       },
+//     ],
+//   },
+// ];
+
+export const LESSONS = [
+  {
+    id: '1',
+    title: 'Basic Greetings',
+    level: 'Beginner',
+    description: 'Learn essential Kannada greetings',
+    duration: '10 min',
+    topics: [
+      'ನಮಸ್ಕಾರ (Namaskara)',
+      'ಹೇಗಿದ್ದೀರಿ? (Hegiddiri?)',
+      'ಶುಭ ದಿನ (Shubha Dina)',
+    ],
+    content: [
+      {
+        type: 'greeting',
+        kannada: 'ನಮಸ್ಕಾರ',
+        pronunciation: 'Namaskara',
+        english: 'Hello/Greetings',
+        audioUrl: require('../assets/audio/namaskara.mp3'),
+      },
+      {
+        type: 'greeting',
+        kannada: 'ಹೇಗಿದ್ದೀರಿ?',
+        pronunciation: 'Hegiddiri?',
+        english: 'How are you?',
+        audioUrl: require('../assets/audio/namaskara.mp3'),
+      },
+    ],
+  },
+  {
+    id: '2',
+    title: 'Numbers 1-10',
+    level: 'Beginner',
+    description: 'Learn to count in Kannada',
+    duration: '15 min',
+    topics: ['ಒಂದು (Ondu)', 'ಎರಡು (Eradu)', 'ಮೂರು (Mooru)'],
+    content: [
+      {
+        type: 'number',
+        kannada: 'ಒಂದು',
+        pronunciation: 'Ondu',
+        english: 'One',
+        audioUrl: 'ondu.mp3',
+      },
+    ],
+  },
+  {
+    id: '3',
+    title: 'Common Phrases',
+    level: 'Beginner',
+    description: 'Learn common phrases used in daily conversations',
+    duration: '20 min',
+    topics: [
+      'ಧನ್ಯವಾದಗಳು (Dhanyavadagalu)',
+      'ಕ್ಷಮಿಸಿ (Kshamisi)',
+      'ನಾನು ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದೇನೆ (Naanu Kannada Kaliyuttiddene)',
+    ],
+    content: [
+      {
+        type: 'phrase',
+        kannada: 'ಧನ್ಯವಾದಗಳು',
+        pronunciation: 'Dhanyavadagalu',
+        english: 'Thank you',
+        audioUrl: 'dhanyavadagalu.mp3',
+      },
+      {
+        type: 'phrase',
+        kannada: 'ಕ್ಷಮಿಸಿ',
+        pronunciation: 'Kshamisi',
+        english: 'Sorry',
+        audioUrl: 'kshamisi.mp3',
+      },
+      {
+        type: 'phrase',
+        kannada: 'ನಾನು ಕನ್ನಡ ಕಲಿಯುತ್ತಿದ್ದೇನೆ',
+        pronunciation: 'Naanu Kannada Kaliyuttiddene',
+        english: 'I am learning Kannada',
+        audioUrl: 'naanu_kannada_kaliyuttiddene.mp3',
+      },
+    ],
+  },
+  {
+    id: '4',
+    title: 'Days of the Week',
+    level: 'Beginner',
+    description: 'Learn the days of the week in Kannada',
+    duration: '10 min',
+    topics: [
+      'ಸೋಮವಾರ (Somavara)',
+      'ಮಂಗಳವಾರ (Mangalavara)',
+      'ಬುಧವಾರ (Budhavara)',
+    ],
+    content: [
+      {
+        type: 'day',
+        kannada: 'ಸೋಮವಾರ',
+        pronunciation: 'Somavara',
+        english: 'Monday',
+        audioUrl: 'somavara.mp3',
+      },
+      {
+        type: 'day',
+        kannada: 'ಮಂಗಳವಾರ',
+        pronunciation: 'Mangalavara',
+        english: 'Tuesday',
+        audioUrl: 'mangalavara.mp3',
+      },
+      {
+        type: 'day',
+        kannada: 'ಬುಧವಾರ',
+        pronunciation: 'Budhavara',
+        english: 'Wednesday',
+        audioUrl: 'budhavara.mp3',
+      },
+    ],
+  },
+  {
+    id: '5',
+    title: 'Basic Questions',
+    level: 'Beginner',
+    description: 'Learn how to ask basic questions in Kannada',
+    duration: '15 min',
+    topics: [
+      'ನಿಮ್ಮ ಹೆಸರು ಏನು? (Nimma Hesaru Enu?)',
+      'ನೀವು ಎಲ್ಲಿಂದ ಬಂದಿದ್ದೀರಿ? (Neewu Ellinda Bandiddiri?)',
+      'ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ? (Neewu Enu Maaduttiri?)',
+    ],
+    content: [
+      {
+        type: 'question',
+        kannada: 'ನಿಮ್ಮ ಹೆಸರು ಏನು?',
+        pronunciation: 'Nimma Hesaru Enu?',
+        english: 'What is your name?',
+        audioUrl: 'nimma_hesaru_enu.mp3',
+      },
+      {
+        type: 'question',
+        kannada: 'ನೀವು ಎಲ್ಲಿಂದ ಬಂದಿದ್ದೀರಿ?',
+        pronunciation: 'Neewu Ellinda Bandiddiri?',
+        english: 'Where are you from?',
+        audioUrl: 'neewu_ellinda_bandiddiri.mp3',
+      },
+      {
+        type: 'question',
+        kannada: 'ನೀವು ಏನು ಮಾಡುತ್ತೀರಿ?',
+        pronunciation: 'Neewu Enu Maaduttiri?',
+        english: 'What do you do?',
+        audioUrl: 'neewu_enu_maaduttiri.mp3',
+      },
+    ],
+  },
+];

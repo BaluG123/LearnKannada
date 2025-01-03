@@ -6,6 +6,10 @@ import SplashScreen from './src/screens/SplashScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 import HomeScreen from './src/screens/HomeScreen';
+import LessonListScreen from './src/screens/LessonListScreen';
+import LessonDetailScreen from './src/screens/LessonDetailScreen';
+import QuizScreen from './src/screens/QuizScreen';
+import QuizResultScreen from './src/screens/QuizResultScreen';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +33,10 @@ export default function App() {
           options={{title: 'Create Profile'}}
         />
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="LessonList" component={LessonListScreen} />
+        <Stack.Screen name="LessonDetail" component={LessonDetailScreen} />
+        <Stack.Screen name="Quiz" component={QuizScreen} />
+        <Stack.Screen name="QuizResult" component={QuizResultScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
