@@ -145,6 +145,7 @@ import {
   updateLanguageProgress,
 } from '../util/firestoreService';
 import {LESSONS} from '../constants/LessonData';
+import LottieView from 'lottie-react-native';
 
 const HomeScreen = ({navigation, route}) => {
   const {username} = route.params;
@@ -185,6 +186,12 @@ const HomeScreen = ({navigation, route}) => {
             <Icon name="fire" size={24} color="#FF9800" />
             <Text style={styles.progressLabel}>Streak</Text>
             <Text style={styles.progressValue}>{dailyStreak} days</Text>
+            {/* <LottieView
+              source={require('../lottie/Rice.json')}
+              autoPlay
+              loop
+              style={{width: wp(100), height: wp(100)}}
+            /> */}
           </View>
           <View style={styles.progressItem}>
             <Icon name="star" size={24} color="#FFC107" />

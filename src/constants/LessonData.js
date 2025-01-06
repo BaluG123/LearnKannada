@@ -2658,6 +2658,7 @@ export const LESSONS = [
         pronunciation: 'Anna',
         english: 'Rice',
         audioUrl: 'anna_food.mp3',
+        lotieJson: require('../lottie/Rice.json'),
       },
       {
         type: 'food',
@@ -2665,6 +2666,7 @@ export const LESSONS = [
         pronunciation: 'Hannu',
         english: 'Fruit',
         audioUrl: 'hannu.mp3',
+        lotieJson: require('../lottie/Fruit.json'),
       },
       {
         type: 'food',
@@ -2672,6 +2674,7 @@ export const LESSONS = [
         pronunciation: 'Haalu',
         english: 'Milk',
         audioUrl: 'haalu.mp3',
+        lotieJson: require('../lottie/Milk.json'),
       },
       {
         type: 'food',
@@ -2679,6 +2682,7 @@ export const LESSONS = [
         pronunciation: 'Rotti',
         english: 'Bread',
         audioUrl: 'rotti.mp3',
+        lotieJson: require('../lottie/Bread.json'),
       },
       {
         type: 'food',
@@ -2686,6 +2690,7 @@ export const LESSONS = [
         pronunciation: 'Bisi Bele',
         english: 'Hot Lentil Soup',
         audioUrl: 'bisi_bele.mp3',
+        imageUrl: require('../images/bisibelebath.webp'),
       },
       {
         type: 'food',
@@ -2693,6 +2698,7 @@ export const LESSONS = [
         pronunciation: 'Idli',
         english: 'Steamed Rice Cake',
         audioUrl: 'idli.mp3',
+        imageUrl: require('../images/idli.webp'),
       },
       {
         type: 'food',
@@ -2700,6 +2706,7 @@ export const LESSONS = [
         pronunciation: 'Dose',
         english: 'Pancake',
         audioUrl: 'dose.mp3',
+        imageUrl: require('../images/dose.webp'),
       },
       {
         type: 'food',
